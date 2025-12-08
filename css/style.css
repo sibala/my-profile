@@ -1,0 +1,74 @@
+/* Generell styling */
+body {
+    background-color: #f4f4f9; /* Bakgrundsfärg på hela sidan (Typ-selektor) */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* 1. ID Selektor för layout (Hög specificitet) */
+#cv-page {
+    width: 800px; /* Begränsar innehållets bredd */
+    
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #333;
+}
+
+header h1 {
+    color: #333;
+}
+
+/* 2. Klass Selektor för enhetlig stil */
+.profile-image {
+    display: block;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: 20px auto;
+    /* Använder border-radius för att göra bilden rund */
+    border-radius: 50%; 
+    border: 3px solid #007bff;
+}
+
+/* Klass för att styla alla sektioner på samma sätt */
+.cv-section {
+    margin-top: 25px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* 3. Kombinations-selektor för att styla UL LI */
+/* Målgrupp: Endast li-element inuti en ul-tagg */
+ul li {
+    color: #28a745; /* Grön färg för Skills */
+}
+
+/* 4. Kombinations-selektor för att styla OL LI */
+/* Målgrupp: Endast li-element inuti en ol-tagg */
+ol li {
+    color: #dc3545; /* Röd färg för Utbildning */
+}
+
+/* 5. Pseudo-klass för länkinteraktion */
+a:hover {
+    color: #ff6600; /* Ändrar färg när muspekaren hålls över */
+    text-decoration: underline;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+    font-size: 0.9em;
+    color: #666;
+}
