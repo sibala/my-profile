@@ -3,7 +3,7 @@ body {
     background-color: #f4f4f9; /* Bakgrundsfärg på hela sidan (Typ-selektor) */
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: red;
+
 }
 
 /* 1. ID Selektor för layout (Hög specificitet) */
